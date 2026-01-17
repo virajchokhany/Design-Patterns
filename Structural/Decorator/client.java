@@ -8,5 +8,8 @@ public class client {
 
         BasePizza cheeseVeggiePizza = new VeggieDecorator(cheesePizza);
         System.out.println(cheeseVeggiePizza.cost()+" "+cheeseVeggiePizza.description());
+
+        BasePizza extraCheeseVeggiePizza = new CheeseDecorator(cheeseVeggiePizza);
+        System.out.println(extraCheeseVeggiePizza.cost()+" "+extraCheeseVeggiePizza.description());
     }
 }
